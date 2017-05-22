@@ -1,0 +1,128 @@
+/*------------------------------------*\
+** VARIABLES
+\*------------------------------------*/
+
+// http://www.zell-weekeat.com/responsive-typography
+
+@font-face {
+  font-family: 'LibreBaskerville-Bold';
+  src: asset-url('../../fonts/LibreBaskerville-Bold.otf') format('opentype');
+  font-weight: $bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreBaskerville-Italic';
+  src: asset-url('../../fonts/LibreBaskerville-Italic.otf') format('opentype');
+  font-weight: $regular;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LibreBaskerville-Regular';
+  src: asset-url('../../fonts/LibreBaskerville-Regular.otf') format('opentype');
+  font-weight: $regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: asset-url('../../fonts/Poppins-Bold.ttf') format('opentype');
+  font-weight: $bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: asset-url('../../fonts/Poppins-Light.ttf') format('opentype');
+  font-weight: $light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Reuglar';
+  src: asset-url('../../fonts/Poppins-Regular.ttf') format('opentype');
+  font-weight: $regular;
+  font-style: normal;
+}
+
+
+
+/*------------------------------------*\
+** HEADINGS
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.67em;
+  font-weight: $regular;
+}
+
+h1 {
+  @include font-size($h1-font-sizes);
+}
+
+h2 {
+  @include font-size($h2-font-sizes);
+}
+
+h3 {
+  @include font-size($h3-font-sizes);
+}
+
+h4 {
+  @include font-size($h4-font-sizes);
+}
+
+h5 {
+  @include font-size($h5-font-sizes);
+}
+
+h6 {
+  @include font-size($h6-font-sizes);
+}
+
+
+
+/*------------------------------------*\
+** LISTS
+\*------------------------------------*/
+
+ul li {
+  list-style-type: none;
+}
+
+ol li {
+  list-style-type: none;
+}
+
+
+
+/*------------------------------------*\
+** LINKS
+\*------------------------------------*/
+
+a.link {
+  outline-width: 0;
+  text-decoration: none;
+  color: $color-primary;
+  transition: 0.2s;
+}
+
+a.link:hover, a.link:focus, a.link:active {
+  color: lighten($color-primary, 10%);
+}
+
+
+
+/*------------------------------------*\
+** OTHER
+\*------------------------------------*/
+
+p {
+  @include font-size($copy-font-sizes);
+  font-family: $base-font-family;
+  margin-bottom: 1.5rem;
+}

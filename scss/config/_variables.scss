@@ -1,0 +1,136 @@
+/*------------------------------------*\
+** COLORS
+\*------------------------------------*/
+$white: #fff;
+$light-grey: #8c8c8c;
+$dark-grey: #474747;
+$gradient: linear-gradient(to bottom, rgba(114,175,211,1) 0%, rgba(55,236,186,1) 100%);
+
+
+
+/*------------------------------------*\
+** BREAKPOINTS
+\*------------------------------------*/
+
+$small: 0;
+$medium: 640px;
+$large: 1024px;
+$xlarge: 1200px;
+$xxlarge: 1440px;
+
+$breakpoints: (
+  small   : $small,
+  medium  : $medium,
+  large   : $large,
+  xlarge  : $xlarge,
+  xxlarge : $xxlarge
+  );
+
+
+
+/*------------------------------------*\
+# GRID
+\*------------------------------------*/
+
+$gutter: 2rem;
+$width: 80rem;
+$text-width: 40rem;
+
+
+
+/*------------------------------------*\
+** BUTTONS
+\*------------------------------------*/
+
+$button-radius: 0.5rem;
+$button-padding--lr: 2rem;
+$button-padding--tb: 0.5rem;
+$button-icon--size: 1.5rem;
+
+
+
+/*------------------------------------*\
+** FONT WEIGHTS
+\*------------------------------------*/
+
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+$extrabold: 900;
+
+
+
+/*------------------------------------*\
+** FONT CONFIG
+\*------------------------------------*/
+
+$base-font-family: 'LibreBaskerville-Regular', serif;
+$base-font-weight: $regular;
+$base-font-size: 16px;
+$base-line-height: 1.6;
+$base-font-color: $dark-grey;
+
+$heading-font-family: 'Poppins-Reuglar', sans-serif;
+
+
+
+/*------------------------------------*\
+** FONT SIZES
+\*------------------------------------*/
+
+$copy-font-sizes: (
+  small  : (1rem, $base-line-height),
+  medium : (1rem, $base-line-height),
+  large  : (1rem, $base-line-height),
+  xlarge : (1rem, $base-line-height),
+  xxlarge: (1rem, $base-line-height)
+  );
+
+$h1-font-sizes: (
+  small  : (1.875rem, 1.2),
+  medium : (2.25rem, 1.2),
+  large  : (2.75rem, 1.2),
+  xlarge : (3.75rem, 1.2),
+  xxlarge: (3.75rem, 1.2)
+  );
+
+$h2-font-sizes: (
+  small  : (1.875rem, 1.2),
+  medium : (2.5rem, 1.2),
+  large  : (2.5rem, 1.2),
+  xlarge : (2.5rem, 1.2),
+  xxlarge: (2.5rem, 1.2)
+  );
+
+$h3-font-sizes: (
+  small  : (1.375rem, 1.2),
+  medium : (1.375rem, 1.2),
+  large  : (1.375rem, 1.2),
+  xlarge : (1.375rem, 1.2),
+  xxlarge: (1.375rem, 1.2)
+  );
+
+$h4-font-sizes: (
+  small  : (1rem, 1.2),
+  medium : (1rem, 1.2),
+  large  : (1rem, 1.2),
+  xlarge : (1rem, 1.2),
+  xxlarge: (1rem, 1.2)
+  );
+
+$h5-font-sizes: (
+  small  : (1rem, 1.2),
+  medium : (1rem, 1.2),
+  large  : (1rem, 1.2),
+  xlarge : (1rem, 1.2),
+  xxlarge: (1rem, 1.2)
+  );
+
+$h6-font-sizes: (
+  small  : (1rem, 1.2),
+  medium : (1rem, 1.2),
+  large  : (1rem, 1.2),
+  xlarge : (1rem, 1.2),
+  xxlarge: (1rem, 1.2)
+  );
