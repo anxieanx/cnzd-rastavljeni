@@ -3,10 +3,11 @@
 \*------------------------------------*/
 
 html {
+  color: $base-font-color;
+  background: $white;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  color: $base-font-color;
 }
 
 body {

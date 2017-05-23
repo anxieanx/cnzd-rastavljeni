@@ -116,10 +116,11 @@
 ** GLOBAL
 \*------------------------------------*/
 html {
+  color: #474747;
+  background: #fff;
   font-family: "LibreBaskerville-Regular", serif;
   font-size: 18px;
-  line-height: 1.2;
-  color: #474747; }
+  line-height: 1.2; }
 
 body {
   box-sizing: border-box;
@@ -883,6 +884,39 @@ p {
   .burger--active:after {
     transform: rotate(-45deg);
     top: 0; }
+
+.events {
+  padding: 50px 0 30px 0; }
+  .events .event {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 50px; }
+    .events .event__img {
+      max-width: 250px;
+      max-height: 200px;
+      overflow: hidden; }
+      .events .event__img img {
+        width: 300px;
+        height: 200px; }
+    .events .event__info {
+      padding-left: 30px; }
+      .events .event__info p:first-child {
+        margin-bottom: 20px;
+        font-size: 1.25rem;
+        font-weight: 600; }
+      .events .event__info p:nth-child(2) {
+        font-weight: 600; }
+      .events .event__info p {
+        margin: 0; }
+    .events .event--border::after {
+      content: '';
+      position: absolute;
+      width: 575px;
+      margin-top: 240px;
+      border-bottom: 2px dotted #8c8c8c; }
+  .events .btn {
+    margin-top: 20px;
+    margin-bottom: 30px; }
 
 .form__fieldset {
   border: none;
