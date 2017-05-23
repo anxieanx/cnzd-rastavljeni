@@ -107,12 +107,12 @@ ol li {
 a.link {
   outline-width: 0;
   text-decoration: none;
-  color: $color-primary;
+  color: $white;
   transition: 0.2s;
 }
 
 a.link:hover, a.link:focus, a.link:active {
-  color: lighten($color-primary, 10%);
+  color: lighten($white, 10%);
 }
 
 

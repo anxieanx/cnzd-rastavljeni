@@ -1,10 +1,14 @@
 @charset 'utf-8';
 
+@import 'config/mixins';
+@import 'config/variables';
+@import 'config/utilities';
+
 @import 'base/global';
 @import 'base/typography';
 
-@import 'config/mixins';
-@import 'config/utilities';
-@import 'config/variables';
-
+@import 'layout/footer';
 @import 'layout/grid';
+
+@import 'modules/burger';
+@import 'modules/forms';

@@ -5,6 +5,7 @@ $white: #fff;
 $light-grey: #8c8c8c;
 $dark-grey: #474747;
 $gradient: linear-gradient(to bottom, rgba(114,175,211,1) 0%, rgba(55,236,186,1) 100%);
+$light-gradient: linear-gradient(to bottom, rgba(114,208,218,1) 0%, rgba(98,229,213,1) 100%);
 
 
 
@@ -67,8 +68,8 @@ $extrabold: 900;
 
 $base-font-family: 'LibreBaskerville-Regular', serif;
 $base-font-weight: $regular;
-$base-font-size: 16px;
-$base-line-height: 1.6;
+$base-font-size: 18px;
+$base-line-height: 1.2;
 $base-font-color: $dark-grey;
 
 $heading-font-family: 'Poppins-Reuglar', sans-serif;
@@ -88,19 +89,19 @@ $copy-font-sizes: (
   );
 
 $h1-font-sizes: (
-  small  : (1.875rem, 1.2),
-  medium : (2.25rem, 1.2),
-  large  : (2.75rem, 1.2),
-  xlarge : (3.75rem, 1.2),
-  xxlarge: (3.75rem, 1.2)
+  small  : (1.75rem, 1.2),
+  medium : (2rem, 1.2),
+  large  : (2.5rem, 1.2),
+  xlarge : (3.5rem, 1.2),
+  xxlarge: (3.5rem, 1.2)
   );
 
 $h2-font-sizes: (
-  small  : (1.875rem, 1.2),
-  medium : (2.5rem, 1.2),
-  large  : (2.5rem, 1.2),
-  xlarge : (2.5rem, 1.2),
-  xxlarge: (2.5rem, 1.2)
+  small  : (1.5rem, 1.2),
+  medium : (1.75rem, 1.2),
+  large  : (2rem, 1.2),
+  xlarge : (2.25rem, 1.2),
+  xxlarge: (2.25rem, 1.2)
   );
 
 $h3-font-sizes: (

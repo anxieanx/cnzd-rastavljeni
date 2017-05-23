@@ -77,11 +77,6 @@
   }
 }
 
-.section--dark {
-  background-color: $black;
-  color: $color-primary;
-}
-
 
 
 /*------------------------------------*\
@@ -153,4 +148,14 @@
 
 .grid--center {
   justify-content: center;
+}
+
+
+
+/*------------------------------------*\
+# CONTAINER
+\*------------------------------------*/
+.container {
+  width: 75%;
+  margin: 0 auto;
 }

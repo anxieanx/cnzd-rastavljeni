@@ -77,19 +77,15 @@
 }
 
 .text--primary {
-  color: $color-primary;
+  color: $dark-grey;
 }
 
 .text--light {
-  color: $white;
+  color: $light-grey;
 }
 
 .text--dark {
-  color: $black;
-}
-
-.text--alert {
-  color: $color-alert;
+  color: $dark-grey;
 }
 
 .text--limiter {
@@ -110,14 +106,6 @@
 
 .full--width-vw {
   width: 100vw;
-}
-
-.shade {
-  background-color: $clouds;
-}
-
-.shade--black {
-  background-color: $black--true;
 }
 
 .no-scroll {
