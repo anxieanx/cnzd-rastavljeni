@@ -823,6 +823,26 @@ p {
   width: 75%;
   margin: 0 auto; }
 
+.header {
+  height: 65vh;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  overflow: hidden; }
+  .header .post__img {
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+    left: 0;
+    top: -150px;
+    z-index: -2; }
+  .header .post__info {
+    margin-top: 220px; }
+  .header .post__title {
+    border-top: 2px dotted #fff;
+    margin-bottom: 15px;
+    padding-top: 20px; }
+
 .btn {
   display: inline-block;
   font-weight: 600;
@@ -887,7 +907,7 @@ p {
 
 .carousel {
   background: #73dfdf;
-  height: 70vh; }
+  height: 65vh; }
 
 .events {
   padding: 50px 0 30px 0; }
@@ -955,6 +975,31 @@ p {
   padding-bottom: 0.9375rem; }
 .form .btn {
   margin-left: -5px; }
+
+.posts {
+  color: #fff;
+  padding: 80px 0; }
+  .posts .post {
+    max-width: 407px;
+    min-height: 230px;
+    position: relative;
+    overflow: hidden; }
+    .posts .post__img {
+      width: 407px;
+      height: 250px;
+      padding: 0 18px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -2; }
+    .posts .post__info {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px; }
+    .posts .post__title {
+      border-top: 2px dotted #73dfdf;
+      margin: 0 40px;
+      padding-top: 15px; }
 
 .quote {
   color: #fff;
