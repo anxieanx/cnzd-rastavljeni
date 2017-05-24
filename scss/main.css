@@ -885,6 +885,10 @@ p {
     transform: rotate(-45deg);
     top: 0; }
 
+.carousel {
+  background: #73dfdf;
+  height: 70vh; }
+
 .events {
   padding: 50px 0 30px 0; }
   .events .event {
@@ -916,6 +920,23 @@ p {
       border-bottom: 2px dotted #8c8c8c; }
   .events .btn {
     margin-top: 20px;
+    margin-bottom: 30px; }
+
+.faq {
+  padding: 50px 0 30px 0; }
+  .faq p {
+    text-align: justify;
+    margin-bottom: 0; }
+  .faq p:first-child {
+    font-weight: 600;
+    margin-top: 0; }
+  .faq .link {
+    color: #474747;
+    font-family: "Poppins-Reuglar", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600; }
+  .faq .btn {
+    margin-top: 30px;
     margin-bottom: 30px; }
 
 .form__fieldset {
