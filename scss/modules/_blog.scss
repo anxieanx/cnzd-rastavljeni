@@ -1,0 +1,7 @@
+.post__text {
+	border-bottom: 2px dotted $blue;
+
+	p:not(:first-child) {
+		text-indent: 30px;
+	}
+}

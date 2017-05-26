@@ -1,6 +1,10 @@
 .posts {
 	color: $white;
 	padding: 80px 0;
+
+	&--padding {
+		padding: 50px 0;
+	}
 	
 	.post {
 		max-width: 407px;
