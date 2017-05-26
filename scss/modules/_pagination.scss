@@ -10,4 +10,9 @@
 		font-family: $heading-font-family;
 		font-size: 1rem;
 	}
+
+	.current {
+		color: $blue;
+		font-weight: $semibold;
+	}
 }

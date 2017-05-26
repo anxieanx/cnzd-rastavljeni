@@ -1090,6 +1090,9 @@ p {
   color: #474747;
   font-family: "Poppins-Reuglar", sans-serif;
   font-size: 1rem; }
+.pagination .current {
+  color: #73dfdf;
+  font-weight: 600; }
 
 .posts {
   color: #fff;
@@ -1144,5 +1147,7 @@ p {
     font-weight: 600; }
   .summary--no-border {
     border: none; }
+  .summary span {
+    color: #73dfdf; }
 
 /*# sourceMappingURL=main.css.map */
