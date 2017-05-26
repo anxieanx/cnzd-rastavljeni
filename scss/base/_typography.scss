@@ -112,7 +112,7 @@ a.link {
 }
 
 a.link:hover, a.link:focus, a.link:active {
-  color: lighten($white, 10%);
+  opacity: 0.8;
 }
 
 

@@ -9,7 +9,16 @@
 	
 
 	&--primary {
-    color: $white;
     background: $gradient;
+    transition: 0.2s;
+
+    a {
+			color: $white;
+			text-decoration: none;
+		}
+  }
+
+  &--primary:hover, &--primary:focus, &--primary:active {
+  	opacity: 0.8;
   }
 }

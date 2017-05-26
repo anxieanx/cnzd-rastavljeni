@@ -182,15 +182,15 @@ h1 {
       line-height: 1.2; } }
   @media screen and (min-width: 1024px) {
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1200px) {
     h1 {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1440px) {
     h1 {
-      font-size: 3.5rem;
+      font-size: 2.75rem;
       line-height: 1.2; } }
 
 h2 {
@@ -198,35 +198,35 @@ h2 {
   line-height: 1.2; }
   @media screen and (min-width: 640px) {
     h2 {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1024px) {
     h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1200px) {
     h2 {
-      font-size: 2.25rem;
+      font-size: 1.75rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1440px) {
     h2 {
-      font-size: 2.25rem;
+      font-size: 1.75rem;
       line-height: 1.2; } }
 
 h3 {
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   line-height: 1.2; }
   @media screen and (min-width: 640px) {
     h3 {
-      font-size: 1.375rem;
+      font-size: 1.125rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1024px) {
     h3 {
-      font-size: 1.375rem;
+      font-size: 1.125rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1200px) {
     h3 {
-      font-size: 1.375rem;
+      font-size: 1.25rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1440px) {
     h3 {
@@ -234,19 +234,19 @@ h3 {
       line-height: 1.2; } }
 
 h4 {
-  font-size: 1rem;
+  font-size: 0.75rem;
   line-height: 1.2; }
   @media screen and (min-width: 640px) {
     h4 {
-      font-size: 1rem;
+      font-size: 0.875rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1024px) {
     h4 {
-      font-size: 1rem;
+      font-size: 0.875rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1200px) {
     h4 {
-      font-size: 1rem;
+      font-size: 0.875rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1440px) {
     h4 {
@@ -254,11 +254,11 @@ h4 {
       line-height: 1.2; } }
 
 h5 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.2; }
   @media screen and (min-width: 640px) {
     h5 {
-      font-size: 1rem;
+      font-size: 0.875rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1024px) {
     h5 {
@@ -270,27 +270,27 @@ h5 {
       line-height: 1.2; } }
   @media screen and (min-width: 1440px) {
     h5 {
-      font-size: 1rem;
+      font-size: 1.125rem;
       line-height: 1.2; } }
 
 h6 {
-  font-size: 1rem;
+  font-size: 0.625rem;
   line-height: 1.2; }
   @media screen and (min-width: 640px) {
     h6 {
-      font-size: 1rem;
+      font-size: 0.75rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1024px) {
     h6 {
-      font-size: 1rem;
+      font-size: 0.875rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1200px) {
     h6 {
-      font-size: 1rem;
+      font-size: 0.875rem;
       line-height: 1.2; } }
   @media screen and (min-width: 1440px) {
     h6 {
-      font-size: 1rem;
+      font-size: 0.875rem;
       line-height: 1.2; } }
 
 /*------------------------------------*\
@@ -312,7 +312,7 @@ a.link {
   transition: 0.2s; }
 
 a.link:hover, a.link:focus, a.link:active {
-  color: white; }
+  opacity: 0.8; }
 
 /*------------------------------------*\
 ** OTHER
@@ -348,10 +348,10 @@ p {
     margin-left: 330px;
     margin-bottom: 15px; }
   .footer .sm-icons {
-    padding-top: 55px; }
+    padding-top: 65px; }
     .footer .sm-icons__img {
       width: 32px;
-      margin-right: 15px; }
+      margin-right: 20px; }
   .footer .copy {
     display: flex;
     justify-content: space-between;
@@ -851,16 +851,20 @@ p {
     width: 48px;
     margin-top: 30px; }
   .nav__logo h3 {
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 0;
     padding-top: 50px;
     padding-left: 60px; }
+  .nav .search-icon {
+    width: 32px;
+    margin-bottom: -10px; }
   .nav__links ul {
-    margin-top: 0;
-    margin-bottom: 10px; }
+    margin-top: 5px;
+    margin-bottom: 15px; }
   .nav__links li {
     display: inline-block;
-    margin: 0 10px; }
+    margin: 0 15px; }
 
 .btn {
   display: inline-block;
@@ -871,8 +875,13 @@ p {
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem; }
   .btn--primary {
-    color: #fff;
-    background: linear-gradient(to bottom, #72afd3 0%, #37ecba 100%); }
+    background: linear-gradient(to bottom, #72afd3 0%, #37ecba 100%);
+    transition: 0.2s; }
+    .btn--primary a {
+      color: #fff;
+      text-decoration: none; }
+  .btn--primary:hover, .btn--primary:focus, .btn--primary:active {
+    opacity: 0.8; }
 
 /*------------------------------------*\
 # HAMBURGER
@@ -1032,7 +1041,7 @@ p {
     margin-top: 175px; }
   .quote__author {
     text-align: right;
-    margin-right: 190px; }
+    margin-right: 280px; }
     .quote__author::before {
       content: '-'; }
 
