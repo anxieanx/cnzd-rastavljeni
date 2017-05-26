@@ -1,0 +1,19 @@
+.category {
+
+	ul li {
+		display: inline-block;
+		margin-left: 15px;
+		margin-bottom: 10px;
+	}
+	
+	.link {
+		color: $dark-grey;
+		font-family: $heading-font-family;
+		font-size: 0.75rem;
+	}
+
+	.current {
+		color: $blue;
+		font-weight: $semibold;
+	}
+}

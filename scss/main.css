@@ -985,6 +985,18 @@ p {
   background: #73dfdf;
   height: 65vh; }
 
+.category ul li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 10px; }
+.category .link {
+  color: #474747;
+  font-family: "Poppins-Reuglar", sans-serif;
+  font-size: 0.75rem; }
+.category .current {
+  color: #73dfdf;
+  font-weight: 600; }
+
 .docs {
   background-image: url("../img/photos/melinda-pack-233281.jpg");
   padding: 50px 0 100px 0; }
@@ -1071,6 +1083,14 @@ p {
 .form .btn {
   margin-left: -5px; }
 
+.pagination ul li {
+  display: inline-block;
+  margin-left: 10px; }
+.pagination .link {
+  color: #474747;
+  font-family: "Poppins-Reuglar", sans-serif;
+  font-size: 1rem; }
+
 .posts {
   color: #fff;
   padding: 80px 0; }
@@ -1111,5 +1131,18 @@ p {
     margin-right: 280px; }
     .quote__author::before {
       content: '-'; }
+
+.summary {
+  border-bottom: 2px dotted #73dfdf;
+  padding-top: 25px;
+  padding-bottom: 20px; }
+  .summary__img img {
+    width: 350px;
+    height: 230px; }
+  .summary h2 {
+    font-family: 'LibreBaskerville-Regular', serif;
+    font-weight: 600; }
+  .summary--no-border {
+    border: none; }
 
 /*# sourceMappingURL=main.css.map */

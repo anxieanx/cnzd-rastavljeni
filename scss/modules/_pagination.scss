@@ -1,0 +1,13 @@
+.pagination {
+
+	ul li {
+		display: inline-block;
+		margin-left: 10px;
+	}
+	
+	.link {
+		color: $dark-grey;
+		font-family: $heading-font-family;
+		font-size: 1rem;
+	}
+}
