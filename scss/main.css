@@ -885,6 +885,52 @@ p {
   .about p {
     text-align: justify; }
 
+.accordion__item {
+  margin-bottom: 2rem;
+  position: relative; }
+
+.accordion__head {
+  color: #474747;
+  border-bottom: 2px solid #73dfdf;
+  font-size: 1.25rem;
+  transition: 0.3s;
+  padding-bottom: 1rem; }
+  .accordion__head:hover {
+    cursor: pointer;
+    color: #73dfdf; }
+
+.accordion__body {
+  display: none; }
+  .accordion__body > p:not(:last-child) {
+    margin-bottom: 1rem;
+    display: inline-block; }
+
+.accordion__arrow {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  display: inline-block;
+  transform: translate(-16px, 0); }
+  .accordion__arrow:before, .accordion__arrow:after {
+    content: "";
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    background-color: #73dfdf;
+    width: 3px;
+    height: 16px; }
+  .accordion__arrow:before {
+    transform: translate(8px, 0) rotate(45deg); }
+  .accordion__arrow:after {
+    transform: translate(-2px, 0) rotate(-45deg); }
+
+.accordion__item.active .accordion__arrow:before {
+  transform: translate(-2px, 0) rotate(45deg); }
+.accordion__item.active .accordion__arrow:after {
+  transform: translate(8px, 0) rotate(-45deg); }
+
+.accordion__item.active .accordion__head {
+  border-bottom: none; }
+
 .authors {
   color: #fff;
   background: #73dfdf;
@@ -1083,25 +1129,67 @@ p {
 .form__label {
   display: none; }
 .form__input {
+  color: #474747;
   text-align: center;
   border: none;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem; }
+  .form__input--contact {
+    width: 350px;
+    font-family: "LibreBaskerville-Regular", serif;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 1.25rem; }
+.form .textarea {
+  width: 100%;
+  color: #474747;
+  font-family: "LibreBaskerville-Regular", serif;
+  font-size: 1rem;
+  border: none;
+  resize: none;
+  margin-top: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem; }
+.form .checkbox {
+  margin-top: 30px; }
+  .form .checkbox__label {
+    font-family: "Poppins-Reuglar", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600; }
 .form .btn {
   margin-left: -5px; }
+  .form .btn--contact {
+    margin-top: -30px; }
 
-.pagination ul li {
-  display: inline-block;
-  margin-left: 10px; }
-.pagination .link {
-  color: #474747;
-  font-family: "Poppins-Reuglar", sans-serif;
-  font-size: 1rem; }
-.pagination .current {
-  color: #73dfdf;
-  font-weight: 600; }
+/*------------------------------------*\
+# CONTACT FORM
+\*------------------------------------*/
+.form-background {
+  color: #fff;
+  background-image: url("../img/photos/tim-marshall-57456.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  padding: 50px 0; }
+  .form-background h2 {
+    margin-bottom: 40px; }
+
+.pagination {
+  padding-bottom: 50px; }
+  .pagination ul li {
+    display: inline-block;
+    margin-left: 10px; }
+  .pagination .link {
+    color: #474747;
+    font-family: "Poppins-Reuglar", sans-serif;
+    font-size: 1rem; }
+  .pagination .current {
+    color: #73dfdf;
+    font-weight: 600; }
 
 .posts {
   color: #fff;
@@ -1154,7 +1242,7 @@ p {
     width: 350px;
     height: 230px; }
   .summary h2 {
-    font-family: 'LibreBaskerville-Regular', serif;
+    font-family: "LibreBaskerville-Regular", serif;
     font-weight: 600; }
   .summary--no-border {
     border: none; }

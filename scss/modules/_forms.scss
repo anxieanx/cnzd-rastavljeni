@@ -12,16 +12,70 @@
   }
 
   &__input {
+    color: $dark-grey;
     text-align: center;
     border: none;
     padding-left: 60px;
     padding-right: 60px;
     padding-top: $button-padding--tb;
     padding-bottom: $button-padding--tb;
+
+    &--contact {
+      width: 350px;
+      font-family: $base-font-family;
+      font-size: 1rem;
+      text-align: left;
+      padding-left: $button-padding--lr;
+    }
+  }
+
+  .textarea {
+    width: 100%;
+    color: $dark-grey;
+    font-family: $base-font-family;
+    font-size: 1rem;
+    border: none;
+    resize: none;
+    margin-top: 20px;
+    padding-left: $button-padding--lr;
+    padding-right: $button-padding--lr;
+    padding-top: $button-padding--tb;
+    padding-bottom: $button-padding--tb;
+  }
+
+  .checkbox {
+    margin-top: 30px;
+
+    &__label {
+      font-family: $heading-font-family;
+      font-size: 0.75rem;
+      font-weight: $semibold;
+    }
   }
 
   .btn {
     margin-left: -5px;
-  }
 
+    &--contact {
+      margin-top: -30px;
+    }
+  }
+}
+
+
+
+/*------------------------------------*\
+# CONTACT FORM
+\*------------------------------------*/
+.form-background {
+  color: $white;
+  background-image: url('../img/photos/tim-marshall-57456.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  padding: 50px 0;
+
+  h2 {
+    margin-bottom: 40px;
+  }
 }
