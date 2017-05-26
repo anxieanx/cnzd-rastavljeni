@@ -1,0 +1,24 @@
+.docs {
+	background-image: url('../img/photos/melinda-pack-233281.jpg');
+	padding: 50px 0 100px 0;
+
+	h2 {
+		color: $light-grey;
+		margin-bottom: 50px;
+	}
+
+	.doc {
+		color: $white;
+		height: 15vh;
+		font-size: 1.25rem;
+		font-weight: $light;
+		text-align: left;
+		padding: 20px 80px 20px 50px;
+
+		img {
+			width: 48px;
+			padding-top: 15px;
+			margin-right: 15px;
+		}
+	}
+}
