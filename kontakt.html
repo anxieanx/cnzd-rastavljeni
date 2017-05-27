@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kontakt | Rastavljeni</title>
+	<!--<link rel="shortcut icon" type="image/png" href="img/alien_pixel.png"/>-->
+	<link rel="stylesheet" href="scss/main.css">
+	<script src="js/gmaps.js"></script>
+</head>
+
+<body>
+	
+<header class="header">
+	<div class="gird container">
+		<div class="cell cell--12--small">
+			<h1>Kontakt</h1>
+			<img src="img/photos/tim-marshall-57456.jpg" class="post__img" alt="header" />
+		</div>
+	</div>
+</header>
+
+
+<section class="about">
+	<div class="grid container">
+		<div class="cell cell--12--small">
+			<h2 class="text--light bot-margin">Opće informacije</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu fermentum mi. Nullam aliquam efficitur magna, sit amet porttitor ante ullamcorper nec. Donec sapien est, imperdiet non rutrum vitae, blandit ut quam.</p>
+			<p>Mauris non libero elit. Quisque vitae magna eget ligula rhoncus lacinia. Curabitur dignissim orci et mi condimentum facilisis. Cras facilisis lectus euismod ante tempus, eget congue eros volutpat.</p>
+			<p>Vivamus commodo venenatis felis, vel pharetra sem bibendum in. Fusce quis odio ut tortor elementum molestie. Donec sollicitudin, metus quis sodales gravida, leo quam euismod erat, imperdiet porttitor arcu lacus ut est.</p>
+			<p> Quisque nunc turpis, pellentesque vel velit eget, dapibus tincidunt justo. Aenean non enim lacinia ligula ultrices eleifend quis sed sem. Nulla augue ante, ultricies sed ultricies nec, rhoncus non lorem. In lorem lacus, mollis ut lobortis id, ornare quis mauris.</p>
+		</div>
+	</div>
+</section>
+
+<section class="map">
+	<div class="grid container">
+		<div class="cell cell--12--small">
+			<h2>Lokacija</h2>
+			<div class="gmap" id="map">
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="form-background form-background--contact">
+	<div class="container">
+		<h2 class="text--light">Kontaktiraj nas</h2>
+
+		<form class="form">
+				<fieldset class="form__fieldset">
+					<div class="form__field">
+						<label class="form__label">E-mail</label>
+						<input class="form__input form__input--contact" type="text" placeholder="E-mail">
+					</div>
+
+					<div class="form__field">
+						<label class="form__label">Poruka</label>
+						<textarea class="textarea" placeholder="Upit" rows="10"></textarea>
+					</div>
+
+					<button class="btn btn--primary btn--contact right"><a href="#">POŠALJI</a></button>
+				</fieldset>
+			</form>
+	</div>
+</section>
+
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5s_--e7k6RcUMm_2YaccV27cfJAI86yw&callback=initMap"></script>
+
+</body>
+
+</html>

@@ -4,7 +4,6 @@
     border: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 1/2*$gutter;
   }
 
   &__label {
@@ -77,5 +76,18 @@
 
   h2 {
     margin-bottom: 40px;
+  }
+
+  &--contact {
+    background-image: url('../img/photos/corinne-kutz-211251.jpg');
+    margin-top: 0;
+
+    .fieldset {
+      margin: 0;
+    }
+
+    .btn {
+      margin-top: 20px;
+    }
   }
 }

@@ -881,7 +881,8 @@ p {
     font-weight: 600; }
   .about h2 {
     color: #8c8c8c;
-    margin-top: 30px; }
+    margin-top: 30px;
+    margin-bottom: 30px; }
   .about p {
     text-align: justify; }
 
@@ -1124,8 +1125,7 @@ p {
 .form__fieldset {
   border: none;
   padding: 0;
-  margin: 0;
-  margin-bottom: 1rem; }
+  margin: 0; }
 .form__label {
   display: none; }
 .form__input {
@@ -1177,6 +1177,13 @@ p {
   padding: 50px 0; }
   .form-background h2 {
     margin-bottom: 40px; }
+  .form-background--contact {
+    background-image: url("../img/photos/corinne-kutz-211251.jpg");
+    margin-top: 0; }
+    .form-background--contact .fieldset {
+      margin: 0; }
+    .form-background--contact .btn {
+      margin-top: 20px; }
 
 .pagination {
   padding-bottom: 50px; }
@@ -1248,5 +1255,17 @@ p {
     border: none; }
   .summary span {
     color: #73dfdf; }
+
+.map {
+  color: #fff;
+  background-color: #73dfdf;
+  padding-top: 60px;
+  padding-bottom: 80px; }
+  .map h2 {
+    margin-bottom: 50px; }
+  .map .gmap {
+    width: 100%;
+    height: 50vh;
+    margin: 0; }
 
 /*# sourceMappingURL=main.css.map */
