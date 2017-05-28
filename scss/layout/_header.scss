@@ -31,7 +31,17 @@
 	}
 
 	&--home {
-		height: 65vh;
+		@include breakpoint ($small) {
+			height: 40vh;
+		}
+
+		@include breakpoint ($medium) {
+			height: 50vh;
+		}
+	
+		@include breakpoint ($large) {
+			height: 65vh;
+		}
 
 		h1 {
 			margin-top: 0;
@@ -52,7 +62,17 @@
 			margin-top: 250px;
 
 			&--top-margin {
-				margin-top: 320px;
+				@include breakpoint ($small) {
+					margin-top: 130px;
+				}
+
+				@include breakpoint ($medium) {
+					margin-top: 230px;
+				}
+
+				@include breakpoint ($large) {
+					margin-top: 320px;
+				}
 			}
 		}
 

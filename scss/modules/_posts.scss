@@ -12,6 +12,14 @@
 		position: relative;
 		overflow: hidden;
 
+		@include breakpoint ($small) {
+			margin-top: 30px;
+		}
+		
+		@include breakpoint ($large) {
+			margin-top: 0;
+		}
+
 		&__img {
 			width: 407px;
 			height: 250px;
@@ -34,4 +42,9 @@
 			padding-top: 15px;
 		}
 	}
+}
+
+.post--highlight {
+	font-size: 1.125rem;
+	font-weight: $semibold;
 }
