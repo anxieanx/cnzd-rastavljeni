@@ -156,6 +156,17 @@
 # CONTAINER
 \*------------------------------------*/
 .container {
-  width: 75%;
   margin: 0 auto;
+
+  @include breakpoint ($small) {
+    width: 85%;
+  }
+
+  @include breakpoint ($medium) {
+    width: 80%;
+   }
+  
+  @include breakpoint ($large) {
+    width: 75%;
+  }
 }

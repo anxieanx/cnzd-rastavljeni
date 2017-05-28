@@ -1,12 +1,33 @@
 .header {
-	height: 45vh;
 	width: 100%;
 	color: $white;
 	position: relative;
 	overflow: hidden;
+	
+	@include breakpoint ($small) {
+		height: 25vh;
+	}
+
+	@include breakpoint ($medium) {
+		height: 35vh;
+	}
+	
+	@include breakpoint ($large) {
+		height: 45vh;
+	}
 
 	h1 {
-		margin-top: 250px;
+		@include breakpoint ($small) {
+			margin-top: 130px;
+		}
+
+		@include breakpoint ($medium) {
+			margin-top: 190px;
+		}
+	
+		@include breakpoint ($large) {
+			margin-top: 250px;
+		}
 	}
 
 	&--home {
@@ -28,7 +49,7 @@
 		}
 
 		&__info {
-			margin-top: 220px;
+			margin-top: 250px;
 
 			&--top-margin {
 				margin-top: 320px;

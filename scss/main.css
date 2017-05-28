@@ -348,7 +348,7 @@ p {
     margin-left: 330px;
     margin-bottom: 15px; }
   .footer .sm-icons {
-    padding-top: 65px; }
+    padding-top: 80px; }
     .footer .sm-icons__img {
       width: 32px;
       margin-right: 20px; }
@@ -820,17 +820,40 @@ p {
 # CONTAINER
 \*------------------------------------*/
 .container {
-  width: 75%;
   margin: 0 auto; }
+  @media only screen and (min-width: 0) {
+    .container {
+      width: 85%; } }
+  @media only screen and (min-width: 640px) {
+    .container {
+      width: 80%; } }
+  @media only screen and (min-width: 1024px) {
+    .container {
+      width: 75%; } }
 
 .header {
-  height: 45vh;
   width: 100%;
   color: #fff;
   position: relative;
   overflow: hidden; }
-  .header h1 {
-    margin-top: 250px; }
+  @media only screen and (min-width: 0) {
+    .header {
+      height: 25vh; } }
+  @media only screen and (min-width: 640px) {
+    .header {
+      height: 35vh; } }
+  @media only screen and (min-width: 1024px) {
+    .header {
+      height: 45vh; } }
+  @media only screen and (min-width: 0) {
+    .header h1 {
+      margin-top: 130px; } }
+  @media only screen and (min-width: 640px) {
+    .header h1 {
+      margin-top: 190px; } }
+  @media only screen and (min-width: 1024px) {
+    .header h1 {
+      margin-top: 250px; } }
   .header--home {
     height: 65vh; }
     .header--home h1 {
@@ -843,7 +866,7 @@ p {
     top: -150px;
     z-index: -2; }
   .header .post__info {
-    margin-top: 220px; }
+    margin-top: 250px; }
     .header .post__info--top-margin {
       margin-top: 320px; }
   .header .post__title {
@@ -874,17 +897,27 @@ p {
     display: inline-block;
     margin: 0 15px; }
 
-.about {
-  padding: 30px 0; }
-  .about__highlight {
-    font-size: 1.125rem;
-    font-weight: 600; }
-  .about h2 {
-    color: #8c8c8c;
-    margin-top: 30px;
-    margin-bottom: 30px; }
-  .about p {
-    text-align: justify; }
+@media only screen and (min-width: 0) {
+  .about {
+    padding: 20px 0; } }
+@media only screen and (min-width: 1024px) {
+  .about {
+    padding: 30px 0; } }
+.about__highlight {
+  font-size: 1.125rem;
+  font-weight: 600; }
+.about h2 {
+  color: #8c8c8c; }
+  @media only screen and (min-width: 0) {
+    .about h2 {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    .about h2 {
+      margin-top: 30px;
+      margin-bottom: 30px; } }
+.about p {
+  text-align: justify; }
 
 .accordion__item {
   margin-bottom: 2rem;
@@ -1137,11 +1170,19 @@ p {
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem; }
   .form__input--contact {
-    width: 350px;
     font-family: "LibreBaskerville-Regular", serif;
     font-size: 1rem;
     text-align: left;
     padding-left: 1.25rem; }
+    @media only screen and (min-width: 0) {
+      .form__input--contact {
+        width: 100%; } }
+    @media only screen and (min-width: 640px) {
+      .form__input--contact {
+        width: 40%; } }
+    @media only screen and (min-width: 1024px) {
+      .form__input--contact {
+        width: 30%; } }
 .form .textarea {
   width: 100%;
   color: #474747;
@@ -1175,8 +1216,12 @@ p {
   background-repeat: no-repeat;
   margin-top: 20px;
   padding: 50px 0; }
-  .form-background h2 {
-    margin-bottom: 40px; }
+  @media only screen and (min-width: 0) {
+    .form-background h2 {
+      margin-bottom: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    .form-background h2 {
+      margin-bottom: 40px; } }
   .form-background--contact {
     background-image: url("../img/photos/corinne-kutz-211251.jpg");
     margin-top: 0; }
@@ -1258,14 +1303,29 @@ p {
 
 .map {
   color: #fff;
-  background-color: #73dfdf;
-  padding-top: 60px;
-  padding-bottom: 80px; }
-  .map h2 {
-    margin-bottom: 50px; }
+  background-color: #73dfdf; }
+  @media only screen and (min-width: 0) {
+    .map {
+      padding-top: 40px;
+      padding-bottom: 60px; } }
+  @media only screen and (min-width: 1024px) {
+    .map {
+      padding-top: 60px;
+      padding-bottom: 80px; } }
+  @media only screen and (min-width: 0) {
+    .map h2 {
+      margin-bottom: 30px; } }
+  @media only screen and (min-width: 1024px) {
+    .map h2 {
+      margin-bottom: 50px; } }
   .map .gmap {
     width: 100%;
-    height: 50vh;
     margin: 0; }
+    @media only screen and (min-width: 0) {
+      .map .gmap {
+        height: 40vh; } }
+    @media only screen and (min-width: 1024px) {
+      .map .gmap {
+        height: 50vh; } }
 
 /*# sourceMappingURL=main.css.map */

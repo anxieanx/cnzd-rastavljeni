@@ -20,11 +20,22 @@
     padding-bottom: $button-padding--tb;
 
     &--contact {
-      width: 350px;
       font-family: $base-font-family;
       font-size: 1rem;
       text-align: left;
       padding-left: $button-padding--lr;
+
+      @include breakpoint ($small) {
+        width: 100%;
+      }
+  
+      @include breakpoint ($medium) {
+        width: 40%;
+      }
+
+      @include breakpoint ($large) {
+        width: 30%;
+      }
     }
   }
 
@@ -75,7 +86,13 @@
   padding: 50px 0;
 
   h2 {
-    margin-bottom: 40px;
+    @include breakpoint ($small) {
+      margin-bottom: 20px;
+    }
+
+    @include breakpoint ($large) {
+      margin-bottom: 40px;
+    }
   }
 
   &--contact {
