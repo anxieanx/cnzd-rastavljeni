@@ -34,10 +34,12 @@
 
 	.post__info {
 		@include breakpoint ($small) {
+			font-size: 0.75rem;
     	margin-top: 10px;
   	}
 
   	@include breakpoint ($large) {
+  		font-size: 0.875rem;
 			margin-top: 0;
 		}
 	}
