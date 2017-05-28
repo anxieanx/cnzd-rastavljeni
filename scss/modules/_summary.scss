@@ -1,11 +1,45 @@
 .summary {
 	border-bottom: 2px dotted $blue;
-	padding-top: 25px;
-	padding-bottom: 20px;
+	
+	@include breakpoint ($small) {
+		padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
+  @include breakpoint ($large) {
+  	padding-top: 25px;
+		padding-bottom: 20px;
+	}
 
 	&__img img {
-		width: 350px;
-		height: 230px;
+		@include breakpoint ($small) {
+    	width: 100%;
+			height: auto;
+  	}
+
+  	@include breakpoint ($large) {
+			width: 90%;
+			height: auto;
+		}
+  
+		@include breakpoint ($xlarge) {
+			width: 90%;
+			height: 230px;
+		}
+	}
+
+	&__info p {
+		text-align: justify;
+	}
+
+	.post__info {
+		@include breakpoint ($small) {
+    	margin-top: 10px;
+  	}
+
+  	@include breakpoint ($large) {
+			margin-top: 0;
+		}
 	}
 
 	h2 {

@@ -1030,6 +1030,9 @@ p {
     .btn--primary a {
       color: #fff;
       text-decoration: none; }
+  .btn--apply {
+    padding-left: 2.375rem;
+    padding-right: 2.375rem; }
 
 /*------------------------------------*\
 # HAMBURGER
@@ -1317,12 +1320,35 @@ p {
       content: '-'; }
 
 .summary {
-  border-bottom: 2px dotted #73dfdf;
-  padding-top: 25px;
-  padding-bottom: 20px; }
-  .summary__img img {
-    width: 350px;
-    height: 230px; }
+  border-bottom: 2px dotted #73dfdf; }
+  @media only screen and (min-width: 0) {
+    .summary {
+      padding-top: 35px;
+      padding-bottom: 30px; } }
+  @media only screen and (min-width: 1024px) {
+    .summary {
+      padding-top: 25px;
+      padding-bottom: 20px; } }
+  @media only screen and (min-width: 0) {
+    .summary__img img {
+      width: 100%;
+      height: auto; } }
+  @media only screen and (min-width: 1024px) {
+    .summary__img img {
+      width: 90%;
+      height: auto; } }
+  @media only screen and (min-width: 1200px) {
+    .summary__img img {
+      width: 90%;
+      height: 230px; } }
+  .summary__info p {
+    text-align: justify; }
+  @media only screen and (min-width: 0) {
+    .summary .post__info {
+      margin-top: 10px; } }
+  @media only screen and (min-width: 1024px) {
+    .summary .post__info {
+      margin-top: 0; } }
   .summary h2 {
     font-family: "LibreBaskerville-Regular", serif;
     font-weight: 600; }
