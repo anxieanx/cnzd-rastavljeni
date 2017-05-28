@@ -111,3 +111,14 @@
 .no-scroll {
   overflow: hidden;
 }
+
+.margin--h2 {
+  @include breakpoint ($small) {
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  @include breakpoint ($large) {
+    margin-bottom: 30px;
+  }
+}

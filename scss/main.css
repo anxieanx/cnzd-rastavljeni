@@ -112,6 +112,14 @@
 .no-scroll {
   overflow: hidden; }
 
+@media only screen and (min-width: 0) {
+  .margin--h2 {
+    padding-top: 30px;
+    margin-bottom: 30px; } }
+@media only screen and (min-width: 1024px) {
+  .margin--h2 {
+    margin-bottom: 30px; } }
+
 /*------------------------------------*\
 ** GLOBAL
 \*------------------------------------*/
@@ -925,19 +933,22 @@ p {
 
 .accordion__head {
   color: #474747;
-  border-bottom: 2px solid #73dfdf;
+  border-bottom: 2px dotted #73dfdf;
   font-size: 1.25rem;
   transition: 0.3s;
+  padding-right: 15px;
   padding-bottom: 1rem; }
   .accordion__head:hover {
     cursor: pointer;
-    color: #73dfdf; }
+    color: #8c8c8c; }
 
 .accordion__body {
   display: none; }
-  .accordion__body > p:not(:last-child) {
-    margin-bottom: 1rem;
-    display: inline-block; }
+  .accordion__body > p {
+    display: inline-block;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 1rem; }
 
 .accordion__arrow {
   position: absolute;
@@ -1074,10 +1085,18 @@ p {
   background: #73dfdf;
   height: 65vh; }
 
+.category ul {
+  padding: 0; }
 .category ul li {
-  display: inline-block;
-  margin-left: 15px;
-  margin-bottom: 10px; }
+  display: inline-block; }
+  @media only screen and (min-width: 0) {
+    .category ul li {
+      margin-left: 5px;
+      margin-bottom: 5px; } }
+  @media only screen and (min-width: 1024px) {
+    .category ul li {
+      margin-left: 15px;
+      margin-bottom: 10px; } }
 .category .link {
   color: #474747;
   font-family: "Poppins-Reuglar", sans-serif;
@@ -1195,16 +1214,27 @@ p {
   padding-right: 1.25rem;
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem; }
-.form .checkbox {
-  margin-top: 30px; }
-  .form .checkbox__label {
-    font-family: "Poppins-Reuglar", sans-serif;
-    font-size: 0.75rem;
-    font-weight: 600; }
+@media only screen and (min-width: 0) {
+  .form .checkbox {
+    margin-top: 15px; } }
+@media only screen and (min-width: 640px) {
+  .form .checkbox {
+    margin-top: 30px; } }
+.form .checkbox__label {
+  font-family: "Poppins-Reuglar", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600; }
 .form .btn {
   margin-left: -5px; }
-  .form .btn--contact {
-    margin-top: -30px; }
+  @media only screen and (min-width: 0) {
+    .form .btn--contact {
+      margin-top: 15px; } }
+  @media only screen and (min-width: 640px) {
+    .form .btn--contact {
+      margin-top: -40px; } }
+  @media only screen and (min-width: 640px) {
+    .form .btn--contact {
+      margin-top: -30px; } }
 
 /*------------------------------------*\
 # CONTACT FORM

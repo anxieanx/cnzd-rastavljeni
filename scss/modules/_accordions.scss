@@ -5,14 +5,15 @@
 
 .accordion__head {
   color: $dark-grey;
-  border-bottom: 2px solid $blue;
+  border-bottom: 2px dotted $blue;
   font-size: 1.25rem;
   transition: 0.3s;
+  padding-right: 15px; 
   padding-bottom: 1rem;
 
   &:hover {
     cursor: pointer;
-    color: $blue;
+    color: $light-grey;
   }
 }
 
@@ -21,9 +22,11 @@
   // padding-top: 1rem;
   // padding-bottom: 1rem;
 
-  & > p:not(:last-child) {
-    margin-bottom: 1rem;
+  & > p {
     display: inline-block;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 1rem;
   }
 }
 
@@ -34,7 +37,6 @@
   top: 0.5rem;
   display: inline-block;
   transform: translate( -16px , 0 );
-
 
   &:before, &:after {
     content: "";

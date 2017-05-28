@@ -1,9 +1,21 @@
 .category {
 
+	ul {
+		padding: 0;
+	}
+
 	ul li {
 		display: inline-block;
-		margin-left: 15px;
-		margin-bottom: 10px;
+
+		@include breakpoint ($small) {
+   		margin-left: 5px;
+			margin-bottom: 5px;
+  	}
+  
+		@include breakpoint ($large) {
+			margin-left: 15px;
+			margin-bottom: 10px;
+		}
 	}
 	
 	.link {
