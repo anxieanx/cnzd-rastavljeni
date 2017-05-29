@@ -1103,7 +1103,9 @@ p {
     color: #fff;
     font-weight: 600; }
   .author--small {
-    padding-top: 0; }
+    padding-top: 0;
+    width: auto;
+    flex-direction: row; }
     .author--small .author__img {
       width: 80px;
       height: 80px;
@@ -1456,8 +1458,13 @@ p {
     font-weight: 600; }
 
 .posts {
-  color: #fff;
-  padding: 80px 0; }
+  color: #fff; }
+  @media only screen and (min-width: 0) {
+    .posts {
+      padding: 30px 0 50px 0; } }
+  @media only screen and (min-width: 1024px) {
+    .posts {
+      padding: 80px 0; } }
   .posts--padding {
     padding: 50px 0; }
   .posts .post {
@@ -1472,21 +1479,44 @@ p {
       .posts .post {
         margin-top: 0; } }
     .posts .post__img {
-      width: 407px;
-      height: 250px;
+      width: 100%;
       padding: 0 18px;
       position: absolute;
       left: 0;
-      bottom: 0;
+      top: 0;
       z-index: -2; }
+      @media only screen and (min-width: 0) {
+        .posts .post__img {
+          height: 200px; } }
+      @media only screen and (min-width: 640px) {
+        .posts .post__img {
+          height: 250px; } }
     .posts .post__info {
       text-align: center;
-      margin-top: 40px;
       margin-bottom: 20px; }
+      @media only screen and (min-width: 0) {
+        .posts .post__info {
+          margin-top: 20px; } }
+      @media only screen and (min-width: 640px) {
+        .posts .post__info {
+          margin-top: 40px; } }
     .posts .post__title {
       border-top: 2px dotted #73dfdf;
       margin: 0 40px;
       padding-top: 15px; }
+      @media only screen and (min-width: 0) {
+        .posts .post__title {
+          font-size: 1.25rem; } }
+      @media only screen and (min-width: 640px) {
+        .posts .post__title {
+          font-size: 1.5rem; } }
+    @media only screen and (min-width: 0) {
+      .posts .post--align {
+        margin-left: auto;
+        margin-right: auto; } }
+    @media only screen and (min-width: 1024px) {
+      .posts .post--align {
+        margin: 0; } }
 
 .post--highlight {
   font-size: 1.125rem;

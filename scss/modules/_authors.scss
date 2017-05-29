@@ -93,6 +93,8 @@
 
 	&--small {
 		padding-top: 0;
+		width: auto;
+		flex-direction: row;
 		
 		.author__img {
 			width: 80px;
