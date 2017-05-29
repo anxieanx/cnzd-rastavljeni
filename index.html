@@ -8,27 +8,35 @@
 	<title>Rastavljeni</title>
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 	<link type="text/css" rel="stylesheet" href="scss/main.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/burger_init.js"></script>
+	<script type="text/javascript" src="js/owl_carousel_init.js"></script>
+	<script type="text/javascript" src="js/owl_carousel_lib.js"></script>
 </head>
 
 <body>
 <nav class="nav">
 	<div class="grid container">
-		<!--<div class="cell cell--12--small nav--mobile">
+		<div class="cell cell--12--small nav--mobile">
 			<div class="nav__logo">
-				<img src="" alt="logo">
+				<img src="img/logo.png" class="left" alt="logo">
 			</div>
 
-			<div class="nav__links nav--user__burger">
-				<ul class="burger burger--active">
-					<li><a href="#" class="link">O nama</a></li>
-					<li><a href="#" class="link">Blog</a></li>
-					<li><a href="#" class="link">Đogađaji</a></li>
-					<li><a href="#" class="link">Savjeti</a></li>
-					<li><a href="#" class="link">Kontakt</a></li>
-				</ul>
+			<div class="nav--user__burger">
+				<div class="burger"></div>
+				
+				<div class="nav__link js-nav--user">
+					<ul>
+						<li><a href="#" class="link">O nama</a></li>
+						<li><a href="#" class="link">Blog</a></li>
+						<li><a href="#" class="link">Đogađaji</a></li>
+						<li><a href="#" class="link">Savjeti</a></li>
+						<li><a href="#" class="link">Kontakt</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>-->
+		</div>
+
 
 		<div class="cell cell--12--small nav--desktop">
 			<div class="nav__logo">
@@ -87,7 +95,13 @@
 
 
 <section class="carousel">
-	
+<div class="container">
+	<div class="owl-carousel owl-carousel--basic">
+  	<div class="carousel__item"><img src="img/photos/jenn-richardson-112980.jpg" alt="ad" /></div>
+  	<div class="carousel__item"><img src="img/photos/andrew-branch-106877.jpg" alt="ad" /></div>
+  	<div class="carousel__item"><img src="img/photos/oliver-thomas-klein-161835.jpg" alt="ad" /></div>
+	</div>
+	</div>
 </section>
 
 
@@ -122,7 +136,7 @@
 </section>
 
 
-<section class="container events">
+<section class="container events clear">
 	<h2 class="text--light">Događaji</h2>
 
 	<div class="grid grid--gutters">
@@ -177,7 +191,7 @@
 
 <footer class="footer clear">
 	<div class="grid container">
-		<div class="cell cell--12--small cell--6--large">
+		<div class="cell cell--12--small cell--7--large">
 			<h2>Newsletter</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor nibh vel elit tristique, iaculis pharetra augue gravida</p>
 			
@@ -198,7 +212,7 @@
 			</div>
 		</div>
 
-		<div class="cell cell--12--small cell--6--large">
+		<div class="cell cell--12--small cell--5--large">
 			<img src="img/logo.png" class="logo" alt="logo" />
 		</div>
 

@@ -3,10 +3,38 @@
 	color: $white;
 	font-family: $heading-font-family;
 
+	&--mobile {
+		@include breakpoint ($small) {
+			display: block;
+ 	 }
+  
+		@include breakpoint ($large) {
+			display: none;
+		}
+	}
+
+	&--desktop {
+		@include breakpoint ($small) {
+			display: none;
+		}
+  
+		@include breakpoint ($large) {
+			display: block;
+		}
+	}
+
 	&__logo {
 		img {
 			width: 48px;
-			margin-top: 30px;
+
+			@include breakpoint ($small) {
+				margin-top: 15px;
+				padding-bottom: 15px;
+			}
+  
+			@include breakpoint ($large) {
+				margin-top: 30px;
+			}
 		}
 
 		h3 {

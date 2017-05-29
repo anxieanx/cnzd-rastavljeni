@@ -4,17 +4,40 @@
 	padding: 30px 0 50px 0;
 
 	.logo {
-		width: 250px;
-		margin-left: 330px;
-		margin-bottom: 15px;
+		@include breakpoint ($small) {
+			display: none;
+		}
+  
+		@include breakpoint ($large) {
+			display: block;
+			width: 250px;
+			margin-left: 130px;
+			margin-bottom: 20px;
+		}
+
+		@include breakpoint ($xlarge) {
+			margin-left: 150px;
+		}
+
+		@include breakpoint ($xxlarge) {
+			margin-left: 250px;
+		}
 	}
 
 	.sm-icons {
-		padding-top: 80px;
+		padding-top: 85px;
 
 		&__img {
 			width: 32px;
 			margin-right: 20px;
+
+			@include breakpoint ($small) {
+				margin-bottom: 15px;
+			}
+
+			@include breakpoint ($large) {
+				margin-bottom: 0;
+			}
 		}
 	}
 
@@ -32,5 +55,4 @@
 			display: inline;
 		}
 	}
-
 }

@@ -1,4 +1,32 @@
 .carousel {
 	background: $blue;
-	height: 65vh;
+
+	@include breakpoint ($small) {
+		height: 40vh;
+	}
+
+	@include breakpoint ($medium) {
+		height: 50vh;
+	}
+	
+	@include breakpoint ($large) {
+		height: 65vh;
+	}
+
+	&__item {
+		@include breakpoint ($small) {
+			margin-top: 40px;
+			height: 220px;
+		}
+
+		@include breakpoint ($medium) {
+			margin-top: 40px;
+			height: 300px;
+		}
+	
+		@include breakpoint ($large) {
+			height: 400px;
+			margin-top: 60px;
+		}
+	}
 }

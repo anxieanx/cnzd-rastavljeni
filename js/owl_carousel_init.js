@@ -5,23 +5,24 @@ $(function () {
     center: true,
     nav: false,
     navText: '',
-    dot: false,
+    dots: false,
     dotsEach: false,
     dotsContainer: false,
     autoplay: true,
+    margin: 150,
 
     responsive : {
 
       0 : {
-        items : 3,
+        items : 1,
       },
 
       640 : {
-        items : 4,
+        items : 1,
       },
 
       1024 : {
-        items : 6,
+        items : 1,
       }
     }
   });
