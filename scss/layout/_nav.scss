@@ -4,12 +4,42 @@
 	font-family: $heading-font-family;
 
 	&--mobile {
+		position: relative;
+
 		@include breakpoint ($small) {
 			display: block;
- 	 }
+ 		}
   
 		@include breakpoint ($large) {
 			display: none;
+		}
+
+		.nav__links {
+			display: none;
+			position: absolute;
+			top: 85px;
+			right: 0;
+			z-index: 2;
+
+			@include breakpoint ($small) {
+				width: 80%;
+			}
+
+			@include breakpoint ($medium) {
+				width: 50%;
+			}
+
+			ul {
+				background: $btn-gradient;
+				margin: 0;
+				padding: 0;
+			}
+
+			li {
+				display: block;
+				text-align: center;
+				padding: 15px 0;
+			}
 		}
 	}
 

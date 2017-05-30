@@ -61,21 +61,11 @@
     padding-bottom: $button-padding--tb;
   }
 
-  .checkbox {
-    @include breakpoint ($small) {
-      margin-top: 15px;
-    }
-  
-    @include breakpoint ($medium) {
-      margin-top: 30px;
-    }
-    
-
-    &__label {
-      font-family: $heading-font-family;
-      font-size: 0.75rem;
-      font-weight: $semibold;
-    }
+  .checkbox__label {    
+    font-family: $heading-font-family;
+    font-size: 0.75rem;
+    font-weight: $semibold;
+    display: inline;
   }
 
   .btn {
@@ -96,10 +86,6 @@
   
       @include breakpoint ($medium) {
         margin-top: -40px;
-      }
-
-      @include breakpoint ($medium) {
-        margin-top: -30px;
       }
     }
   }
@@ -139,5 +125,63 @@
     .btn {
       margin-top: 20px;
     }
+  }
+}
+
+
+
+/*------------------------------------*\
+# CHECKBOX
+\*------------------------------------*/
+
+.input--checkbox {
+  /* original check box are push outside the viexport */
+  position: absolute;
+  left: -1000em;
+
+  & + label {
+    background: $white;
+    line-height: 2rem;
+  }
+
+  & + label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    background: url('../img/icons/checkbox-3.png') no-repeat;
+    outline: 0 !important;
+    border: 0 !important;
+
+    @include breakpoint ($small) {
+      margin-top: 10px;
+    }
+
+    @include breakpoint ($medium) {
+      margin-top: 30px;
+    }
+
+    /* The following is used to adjust the position of
+    the check boxes on the text baseline */
+
+    vertical-align: bottom;
+    position: relative;
+    bottom: 0;
+  }
+
+  &:checked + label:before {
+    background-position: 0 -8px;
+  }
+
+  &:disabled + label:before {
+    background-position: 0 -120px;
+  }
+
+  &:checked:disabled + label:before {
+    background-position: 0 -40px;
+  }
+
+  &:focus + label:before {
+    outline: 2px dotted $blue;
   }
 }

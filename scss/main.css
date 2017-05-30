@@ -321,9 +321,14 @@ a.link {
   text-decoration: none;
   color: #fff;
   transition: 0.2s; }
+  a.link--grey {
+    color: #474747; }
 
 a.link:hover, a.link:focus, a.link:active {
-  opacity: 0.8; }
+  border-bottom: 2px dotted #fff; }
+
+a.link--grey:hover, a.link--grey:focus, a.link--grey:active {
+  border-bottom: 2px dotted #474747; }
 
 /*------------------------------------*\
 ** OTHER
@@ -361,14 +366,7 @@ p {
     .footer .logo {
       display: block;
       width: 250px;
-      margin-left: 130px;
       margin-bottom: 20px; } }
-  @media only screen and (min-width: 1200px) {
-    .footer .logo {
-      margin-left: 150px; } }
-  @media only screen and (min-width: 1440px) {
-    .footer .logo {
-      margin-left: 250px; } }
   .footer .sm-icons {
     padding-top: 85px; }
     .footer .sm-icons__img {
@@ -933,12 +931,34 @@ p {
   background: linear-gradient(to bottom, #72afd3 0%, #37ecba 100%);
   color: #fff;
   font-family: "Poppins-Reuglar", sans-serif; }
-  @media only screen and (min-width: 0) {
-    .nav--mobile {
-      display: block; } }
-  @media only screen and (min-width: 1024px) {
-    .nav--mobile {
-      display: none; } }
+  .nav--mobile {
+    position: relative; }
+    @media only screen and (min-width: 0) {
+      .nav--mobile {
+        display: block; } }
+    @media only screen and (min-width: 1024px) {
+      .nav--mobile {
+        display: none; } }
+    .nav--mobile .nav__links {
+      display: none;
+      position: absolute;
+      top: 85px;
+      right: 0;
+      z-index: 2; }
+      @media only screen and (min-width: 0) {
+        .nav--mobile .nav__links {
+          width: 80%; } }
+      @media only screen and (min-width: 640px) {
+        .nav--mobile .nav__links {
+          width: 50%; } }
+      .nav--mobile .nav__links ul {
+        background: linear-gradient(to bottom, #37ecba 0%, #72afd3 100%);
+        margin: 0;
+        padding: 0; }
+      .nav--mobile .nav__links li {
+        display: block;
+        text-align: center;
+        padding: 15px 0; }
   @media only screen and (min-width: 0) {
     .nav--desktop {
       display: none; } }
@@ -1135,10 +1155,7 @@ p {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem;
-  /*&--primary:hover, &--primary:focus, &--primary:active {
-  	opacity: 0.8;
-  }*/ }
+  padding-bottom: 0.9375rem; }
   .btn--primary {
     background: linear-gradient(to bottom, #72afd3 0%, #37ecba 100%);
     transition: 0.2s; }
@@ -1148,6 +1165,9 @@ p {
   .btn--apply {
     padding-left: 2.375rem;
     padding-right: 2.375rem; }
+  .btn--primary:hover, .btn--primary:focus, .btn--primary:active {
+    transition: 0.2s;
+    background: linear-gradient(to bottom, #37ecba 0%, #72afd3 100%); }
 
 /*------------------------------------*\
 # HAMBURGER
@@ -1161,8 +1181,8 @@ p {
   padding-bottom: 1rem;
   padding-top: 1rem;
   z-index: 3;
-  right: 30px;
-  top: 25px; }
+  top: 25px;
+  right: 0; }
   .nav--user__burger:hover {
     cursor: pointer; }
 
@@ -1238,12 +1258,13 @@ p {
       margin-left: 15px;
       margin-bottom: 10px; } }
 .category .link {
-  color: #474747;
   font-family: "Poppins-Reuglar", sans-serif;
   font-size: 0.75rem; }
 .category .current {
   color: #73dfdf;
   font-weight: 600; }
+.category .current:hover, .category .current:active, .category .current:focus {
+  border-bottom: 2px dotted #73dfdf; }
 
 .docs {
   background-image: url("../img/photos/melinda-pack-233281.jpg");
@@ -1262,14 +1283,15 @@ p {
     color: #fff;
     font-size: 1.25rem;
     font-weight: 300;
-    text-align: left;
-    padding: 10px 50px; }
+    text-align: left; }
     @media only screen and (min-width: 0) {
       .docs .doc {
-        margin-top: 30px; } }
+        margin-top: 30px;
+        padding: 10px 20px; } }
     @media only screen and (min-width: 1024px) {
       .docs .doc {
-        margin-top: 0; } }
+        margin-top: 0;
+        padding: 10px 50px; } }
     .docs .doc img {
       width: 48px; }
 
@@ -1392,16 +1414,11 @@ p {
   padding-right: 1.25rem;
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem; }
-@media only screen and (min-width: 0) {
-  .form .checkbox {
-    margin-top: 15px; } }
-@media only screen and (min-width: 640px) {
-  .form .checkbox {
-    margin-top: 30px; } }
 .form .checkbox__label {
   font-family: "Poppins-Reuglar", sans-serif;
   font-size: 0.75rem;
-  font-weight: 600; }
+  font-weight: 600;
+  display: inline; }
 @media only screen and (min-width: 0) {
   .form .btn {
     margin-top: 15px;
@@ -1416,9 +1433,6 @@ p {
 @media only screen and (min-width: 640px) {
   .form .btn--contact {
     margin-top: -40px; } }
-@media only screen and (min-width: 640px) {
-  .form .btn--contact {
-    margin-top: -30px; } }
 
 /*------------------------------------*\
 # CONTACT FORM
@@ -1444,18 +1458,58 @@ p {
     .form-background--contact .btn {
       margin-top: 20px; }
 
+/*------------------------------------*\
+# CHECKBOX
+\*------------------------------------*/
+.input--checkbox {
+  /* original check box are push outside the viexport */
+  position: absolute;
+  left: -1000em; }
+  .input--checkbox + label {
+    background: #fff;
+    line-height: 2rem; }
+  .input--checkbox + label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    background: url("../img/icons/checkbox-3.png") no-repeat;
+    outline: 0 !important;
+    border: 0 !important;
+    /* The following is used to adjust the position of
+    the check boxes on the text baseline */
+    vertical-align: bottom;
+    position: relative;
+    bottom: 0; }
+    @media only screen and (min-width: 0) {
+      .input--checkbox + label:before {
+        margin-top: 10px; } }
+    @media only screen and (min-width: 640px) {
+      .input--checkbox + label:before {
+        margin-top: 30px; } }
+  .input--checkbox:checked + label:before {
+    background-position: 0 -8px; }
+  .input--checkbox:disabled + label:before {
+    background-position: 0 -120px; }
+  .input--checkbox:checked:disabled + label:before {
+    background-position: 0 -40px; }
+  .input--checkbox:focus + label:before {
+    outline: 2px dotted #73dfdf; }
+
 .pagination {
   padding-bottom: 50px; }
   .pagination ul li {
     display: inline-block;
     margin-left: 10px; }
   .pagination .link {
-    color: #474747;
     font-family: "Poppins-Reuglar", sans-serif;
     font-size: 1rem; }
   .pagination .current {
     color: #73dfdf;
-    font-weight: 600; }
+    font-weight: 600;
+    border-bottom: none; }
+  .pagination .current:hover, .pagination .current:active, .pagination .current:focus {
+    border-bottom: 2px dotted #73dfdf; }
 
 .posts {
   color: #fff; }
@@ -1468,29 +1522,24 @@ p {
   .posts--padding {
     padding: 50px 0; }
   .posts .post {
-    max-width: 407px;
-    min-height: 230px;
     position: relative;
     overflow: hidden; }
     @media only screen and (min-width: 0) {
       .posts .post {
-        margin-top: 30px; } }
+        margin-top: 30px;
+        padding-bottom: 50px; } }
     @media only screen and (min-width: 1024px) {
       .posts .post {
-        margin-top: 0; } }
+        margin-top: 0;
+        padding-bottom: 60px; } }
     .posts .post__img {
       width: 100%;
+      max-height: 225px;
       padding: 0 18px;
       position: absolute;
       left: 0;
       top: 0;
       z-index: -2; }
-      @media only screen and (min-width: 0) {
-        .posts .post__img {
-          height: 200px; } }
-      @media only screen and (min-width: 640px) {
-        .posts .post__img {
-          height: 250px; } }
     .posts .post__info {
       text-align: center;
       margin-bottom: 20px; }
@@ -1498,6 +1547,12 @@ p {
         .posts .post__info {
           margin-top: 20px; } }
       @media only screen and (min-width: 640px) {
+        .posts .post__info {
+          margin-top: 40px; } }
+      @media only screen and (min-width: 1024px) {
+        .posts .post__info {
+          margin-top: 10px; } }
+      @media only screen and (min-width: 1200px) {
         .posts .post__info {
           margin-top: 40px; } }
     .posts .post__title {

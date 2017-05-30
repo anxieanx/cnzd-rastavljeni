@@ -19,7 +19,6 @@
 	}
 	
 	.link {
-		color: $dark-grey;
 		font-family: $heading-font-family;
 		font-size: 0.75rem;
 	}
@@ -27,5 +26,9 @@
 	.current {
 		color: $blue;
 		font-weight: $semibold;
+	}
+
+	.current:hover, .current:active, .current:focus {
+		border-bottom: 2px dotted $blue;
 	}
 }

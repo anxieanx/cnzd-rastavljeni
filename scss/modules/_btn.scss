@@ -23,7 +23,8 @@
     padding-right: 2.375rem;
   }
 
-  /*&--primary:hover, &--primary:focus, &--primary:active {
-  	opacity: 0.8;
-  }*/
+  &--primary:hover, &--primary:focus, &--primary:active {
+  	transition: 0.2s;
+    background: $btn-gradient;
+  }
 }

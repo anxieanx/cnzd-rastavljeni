@@ -21,16 +21,15 @@
 		font-size: 1.25rem;
 		font-weight: $light;
 		text-align: left;
-		padding: 10px 50px;
-
-		
 
 		@include breakpoint ($small) {
 			margin-top: 30px;
+			padding: 10px 20px;
 		}
   
 		@include breakpoint ($large) {
 			margin-top: 0;
+			padding: 10px 50px;
 		}
 
 		img {

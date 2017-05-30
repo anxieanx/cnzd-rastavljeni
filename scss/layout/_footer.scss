@@ -11,16 +11,7 @@
 		@include breakpoint ($large) {
 			display: block;
 			width: 250px;
-			margin-left: 130px;
 			margin-bottom: 20px;
-		}
-
-		@include breakpoint ($xlarge) {
-			margin-left: 150px;
-		}
-
-		@include breakpoint ($xxlarge) {
-			margin-left: 250px;
 		}
 	}
 

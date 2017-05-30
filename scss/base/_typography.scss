@@ -109,10 +109,18 @@ a.link {
   text-decoration: none;
   color: $white;
   transition: 0.2s;
+
+  &--grey {
+    color: $dark-grey;
+  }
 }
 
 a.link:hover, a.link:focus, a.link:active {
-  opacity: 0.8;
+  border-bottom: 2px dotted $white;
+}
+
+a.link--grey:hover, a.link--grey:focus, a.link--grey:active {
+  border-bottom: 2px dotted $dark-grey;
 }
 
 
