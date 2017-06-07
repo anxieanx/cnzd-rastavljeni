@@ -8,7 +8,10 @@
 	<title>Kontakt | Rastavljeni</title>
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 	<link type="text/css" rel="stylesheet" href="scss/main.css">
+	<link type="text/css" rel="stylesheet" href="scss/vendors/animate.css">
 	<script type="text/javascript" src="js/gmaps.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/wow_init.js"></script>
 </head>
 
 <body>
@@ -16,7 +19,7 @@
 <header class="header">
 	<div class="gird container">
 		<div class="cell cell--12--small">
-			<h1>Kontakt</h1>
+			<h1 class="wow bounceInDown">Kontakt</h1>
 			<img src="img/photos/tim-marshall-57456.jpg" class="post__img" alt="header" />
 		</div>
 	</div>
@@ -39,9 +42,7 @@
 	<div class="grid container">
 		<div class="cell cell--12--small">
 			<h2>Lokacija</h2>
-			<div class="gmap" id="map">
-				
-			</div>
+			<div class="gmap wow fadeInDown" id="map"></div>
 		</div>
 	</div>
 </section>
@@ -49,7 +50,7 @@
 <section class="form-background form-background--contact">
 	<div class="grid container">
 		<div class="cell cell--12--small">
-			<h2 class="text--light">Kontaktiraj nas</h2>
+			<h2 class="text--light wow bounceInDown">Kontaktiraj nas</h2>
 
 			<form class="form">
 				<fieldset class="form__fieldset">
@@ -63,7 +64,7 @@
 						<textarea class="textarea" placeholder="Upit" rows="10"></textarea>
 					</div>
 
-					<button class="btn btn--primary btn--contact right"><a href="#">POŠALJI</a></button>
+					<button class="btn btn--primary btn--contact right wow fadeInRight"><a href="#">POŠALJI</a></button>
 				</fieldset>
 			</form>
 		</div>
